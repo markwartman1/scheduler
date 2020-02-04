@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_and_controller.addAppointmentController">
+   <children>
+      <VBox layoutX="20.0" layoutY="19.0" prefHeight="498.0" prefWidth="380.0">
+         <children>
+            <Label text="Add Appointment">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <GridPane vgap="25.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="109.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="10.0" prefWidth="271.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Name:" />
+                  <Label text="Address:" GridPane.rowIndex="1" />
+                  <Label text="Address:" GridPane.rowIndex="2" />
+                  <Label text="Zip Code:" GridPane.rowIndex="3" />
+                  <Label text="Phone:" GridPane.rowIndex="4" />
+                  <Label text="Country:" GridPane.rowIndex="5" />
+                  <Label text="City:" GridPane.rowIndex="6" />
+                  <TextField fx:id="name_id" GridPane.columnIndex="1" />
+                  <TextField fx:id="address_id" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="address2_id" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="zipCode_id" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="phone_id" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="country_id" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="city_id" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <HBox prefHeight="800.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <ChoiceBox prefWidth="150.0" />
+                  <ComboBox prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addCustSave" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#addCustCancel" text="Cancel" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" top="20.0" />
+         </padding>
+      </VBox>
+      <SplitPane dividerPositions="0.419740777666999" layoutX="16.0" layoutY="9.0" prefHeight="669.0" prefWidth="1005.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="667.0" prefWidth="430.0">
+                     <children>
+                        <Label text="Add Appointment">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <VBox maxWidth="-Infinity" prefHeight="546.0" prefWidth="400.0">
+                           <children>
+                              <GridPane prefHeight="305.0" prefWidth="355.0" vgap="25.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="99.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="342.0" minWidth="10.0" prefWidth="342.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Customer:" />
+                                    <Label text="Type:" GridPane.rowIndex="1" />
+                                    <Label text="Location:" GridPane.rowIndex="2" />
+                                    <Label text="Date" GridPane.rowIndex="3" />
+                                    <Label text="Length:" GridPane.rowIndex="4" />
+                                    <Label text="Start" GridPane.rowIndex="5" />
+                                    <DatePicker fx:id="datePicker" editable="false" onAction="#dp_action" prefHeight="27.0" prefWidth="296.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <ComboBox fx:id="type" prefHeight="27.0" prefWidth="296.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="locationCombo" prefHeight="27.0" prefWidth="296.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="length" onAction="#len_action" prefHeight="27.0" prefWidth="296.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <ComboBox fx:id="startCombo" onAction="#startAction" prefHeight="27.0" prefWidth="296.0" promptText="Choose available time" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label fx:id="customerText" prefHeight="26.0" prefWidth="296.0" text="            Select a Customer Please    --&gt;" GridPane.columnIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#addApptCancel" text="Cancel" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="85.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="320.0" prefWidth="481.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="461.0" spacing="10.0">
+                           <children>
+                              <Button layoutX="321.0" layoutY="29.0" mnemonicParsing="false" text="n/a" />
+                              <TextField />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="custTbl_id" prefHeight="283.0" prefWidth="461.0">
+                           <columns>
+                              <TableColumn fx:id="name_cust_col_id" prefWidth="105.0" text="Name" />
+                              <TableColumn fx:id="address_cust_col" prefWidth="141.0" text="Address" />
+                              <TableColumn fx:id="city_cust_col_id" prefWidth="95.0" text="City" />
+                              <TableColumn fx:id="phone_cust_col_id" prefWidth="119.0" text="Phone" />
+                           </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button layoutX="321.0" layoutY="29.0" mnemonicParsing="false" onAction="#selectCustomer" text="Select Customer" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox layoutX="14.0" layoutY="327.0" prefHeight="313.0" prefWidth="461.0">
+                     <children>
+                        <TableView fx:id="apptTable" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="529.0">
+                           <columns>
+                              <TableColumn fx:id="startTable" prefWidth="185.0" text="Start" />
+                              <TableColumn fx:id="end" prefWidth="177.0" text="End" />
+                              <TableColumn fx:id="locationTable" prefWidth="98.0" text="Location" />
+                              <TableColumn fx:id="user" prefWidth="68.0" text="User" />
+                           </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#addApptSave" text="Save" />
+                              <Button layoutX="321.0" layoutY="29.0" mnemonicParsing="false" text="n/a" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

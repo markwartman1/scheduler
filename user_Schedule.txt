@@ -1,0 +1,30 @@
+
+USER SCHEDULE
+
+
+Id     START                   END                     TYPE          LOCATION      
+---    ------------            ------------            ------        ------------  
+
+1      2019-06-24 18:00:00.0   2019-06-24 19:00:00.0   Consultation  Phoenix       
+1      2019-06-24 14:00:00.0   2019-06-24 15:00:00.0   Consultation  Phoenix       
+1      2019-06-24 16:00:00.0   2019-06-24 17:00:00.0   Consultation  Phoenix       
+1      2019-06-24 17:30:00.0   2019-06-24 18:00:00.0   Consultation  Phoenix       
+1      2019-07-22 14:00:00.0   2019-07-22 15:00:00.0   Consultation  Phoenix       
+1      2019-08-07 17:00:00.0   2019-08-07 17:30:00.0   Consultation  London        
+1      2019-08-07 17:30:00.0   2019-08-07 18:00:00.0   Inquiry       London        
+1      2019-08-08 17:00:00.0   2019-08-08 18:00:00.0   Repair        London        
+1      2019-09-10 18:00:00.0   2019-09-10 19:00:00.0   Consultation  New York      
+1      2019-08-13 17:00:00.0   2019-08-13 18:00:00.0   Consultation  New York      
+1      2019-10-16 20:00:00.0   2019-10-16 21:00:00.0   Consultation  Phoenix       
+1      2019-11-11 22:00:00.0   2019-11-11 23:00:00.0   Consultation  Phoenix       
+1      2019-06-25 14:00:00.0   2019-06-25 15:00:00.0   Inquiry       Phoenix       
+1      2019-07-08 15:00:00.0   2019-07-08 16:00:00.0   Repair        London        
+1      2019-07-08 16:00:00.0   2019-07-08 17:00:00.0   Consultation  Phoenix       
+1      2019-07-03 17:00:00.0   2019-07-03 17:30:00.0   Inquiry       New York      
+1      2019-06-28 17:00:00.0   2019-06-28 17:30:00.0   Consultation  Phoenix       
+1      2019-08-16 14:00:00.0   2019-08-16 15:00:00.0   Consultation  Phoenix       
+1      2019-10-01 18:00:00.0   2019-10-01 19:00:00.0   Consultation  New York      
+1      2019-12-02 15:00:00.0   2019-12-02 16:00:00.0   Consultation  New York      
+1      2019-12-02 16:00:00.0   2019-12-02 17:00:00.0   Consultation  New York      
+2      2019-06-24 15:00:00.0   2019-06-24 16:00:00.0   Consultation  not needed    
+3      2019-06-24 19:00:00.0   2019-06-24 20:00:00.0   Consultation  not needed    

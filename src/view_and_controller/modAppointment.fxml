@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="804.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_and_controller.modAppointmentController">
+   <children>
+      <TableView fx:id="tbl_view_appointment" layoutX="33.0" layoutY="503.0" prefHeight="276.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="start_col" prefWidth="209.0" text="Start" />
+          <TableColumn fx:id="end_col" prefWidth="203.0" text="End" />
+            <TableColumn fx:id="location_col" prefWidth="126.0" text="Location" />
+            <TableColumn fx:id="user_col" prefWidth="50.0" text="User" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="102.0" layoutY="278.0" prefHeight="130.0" prefWidth="451.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="130.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="321.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="126.0" text="Date" />
+            <Label prefHeight="30.0" prefWidth="126.0" text="Length" GridPane.rowIndex="1" />
+            <Label prefHeight="30.0" prefWidth="126.0" text="Start" GridPane.rowIndex="2" />
+            <ComboBox fx:id="lengthCombo" onAction="#length_combo_action" prefHeight="33.0" prefWidth="308.0" promptText="Select length of Appt." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="startCombo" onAction="#start_combo_action" prefHeight="35.0" prefWidth="308.0" promptText="Choose available time" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="datePicker" editable="false" onAction="#datePick_action" prefHeight="36.0" prefWidth="307.0" promptText="Pick a Date" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="78.0" layoutY="25.0" prefHeight="36.0" prefWidth="210.0" text="Mod Appointment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="417.0" layoutY="451.0" mnemonicParsing="false" onAction="#save_btn" text=" Save " />
+      <Button layoutX="211.0" layoutY="451.0" mnemonicParsing="false" onAction="#cancel_btn" text="Cancel" />
+      <Label layoutX="263.0" layoutY="110.0" prefHeight="36.0" prefWidth="210.0" text="Current Appointment">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="102.0" layoutY="146.0" prefHeight="130.0" prefWidth="436.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="306.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="126.0" text="End" GridPane.rowIndex="1" />
+            <Label prefHeight="30.0" prefWidth="126.0" text="Start" />
+            <TextField fx:id="curr_apt_start" GridPane.columnIndex="1" />
+            <TextField fx:id="curr_apt_end" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

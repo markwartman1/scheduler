@@ -1,0 +1,13 @@
+TYPES OF APPOINTMENTS PER MONTH
+
+
+COUNT   DATE              
+------  ------------      
+
+2       2019 - June       
+3       2019 - July       
+3       2019 - August     
+1       2019 - September  
+1       2019 - October    
+1       2019 - November   
+1       2019 - December   

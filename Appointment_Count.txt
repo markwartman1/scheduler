@@ -1,0 +1,14 @@
+NUMBER OF APPOINTMENTS PER MONTH
+    second column is Type count
+
+
+APPOINTMENTS      TYPES   DATE              
+------------      ------  ------------      
+
+8                 2       2019 - June       
+4                 3       2019 - July       
+5                 3       2019 - August     
+1                 1       2019 - September  
+2                 1       2019 - October    
+1                 1       2019 - November   
+2                 1       2019 - December   
